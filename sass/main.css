@@ -57,6 +57,28 @@ header nav ul li a {
   transition: 0.2s;
 }
 
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3em;
+  margin-bottom: 0;
+}
+.footer_container .footer_h3 {
+  text-decoration: underline;
+}
+.footer_container .footer_call, .footer_container .footer_close {
+  padding: 1em;
+}
+
+.mention {
+  text-align: center;
+  color: rgba(71, 71, 71, 0.5);
+  padding-bottom: 0.5em;
+}
+
 .menuBurger {
   display: none;
 }
