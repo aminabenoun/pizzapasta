@@ -1,9 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
-  font-family: "Zilla Slab", serif;
+  background-color: white;
+  color: black;
+}
+body main {
+  margin: 2em;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15px;
+}
+body .maps {
+  text-align: center;
+  filter: grayscale(100%);
+  margin-top: 10em;
+  margin-bottom: 5em;
+  padding: 0;
 }
 
 .menuBurger {
@@ -12,49 +23,54 @@ body {
 
 header {
   width: 100%;
-  height: 120px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  height: 160px;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: black;
 }
-header .nav-top {
-  color: white;
+header .nav_link {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 80;
+  margin: 0 0 0 15em;
 }
-header .nav-top p {
-  padding: 0 15px;
-  font-size: 20px;
-  transition: 0.2s;
-}
-header nav {
-  background-color: white;
-  display: flex;
-  text-decoration: none;
-  display: flex;
-  padding: 0 20px;
-}
-header nav img {
-  width: 4%;
-}
-header nav ul {
-  display: flex;
-  padding-top: 20px;
-  padding: 0 60px;
-}
-header nav ul li {
+header li {
   list-style: none;
-  padding: 0 20px;
   font-weight: bold;
 }
-header nav ul li a {
+header a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 400;
   font-weight: bold;
   transition: 0.2s;
+}
+header .nav_link_reseaux {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+header .nav_link_reseaux img {
+  width: 20%;
+}
+header .header_photo {
+  padding: 100px;
+  background-image: url("../../images/escalopemilanaise.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+}
+header h1 {
+  color: white;
+  font-size: 45px;
+  font-style: italic;
 }
 
 .footer_container {
@@ -79,58 +95,24 @@ header nav ul li a {
   padding-bottom: 0.5em;
 }
 
-.menuBurger {
-  display: none;
+.intro {
+  margin-top: 2em;
+  text-align: center;
 }
-
-header {
-  width: 100%;
-  height: 120px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+.intro .h1 {
+  margin: 20em 0 0 0;
 }
-header .nav-top {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.intro .h2 {
+  margin: 2em 0 0 0;
+  text-align: center;
 }
-header .nav-top p {
-  padding: 0 15px;
-  font-size: 20px;
-  transition: 0.2s;
+.intro .h3 {
+  margin: 0 0 2em 0;
 }
-header nav {
-  background-color: white;
-  display: flex;
-  text-decoration: none;
-  display: flex;
-  padding: 0 20px;
+.intro p {
+  margin: 0;
 }
-header nav img {
-  width: 4%;
-}
-header nav ul {
-  display: flex;
-  padding-top: 20px;
-  padding: 0 60px;
-}
-header nav ul li {
-  list-style: none;
-  padding: 0 20px;
+.intro .bold {
   font-weight: bold;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: 400;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.carroussel {
-  width: auto;
-  height: 500px;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
